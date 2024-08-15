@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    /* Ensures the main container takes up remaining space */
+}
+
+footer {
+    background-color: #2d3748; /* Adjust as needed */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /* Adds padding to footer content */
+}
+
+.github-profile-details {
+    height: 28rem;
+    /* Fixed height for the profile details */
+}
+
+.loading-text {
+    display: none;
+}
+
+.loading-text.show {
+    display: block;
+}
+
+.github-profile-details.hide {
+    display: none;
+}
+
+.github-profile-details img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.github-profile-details p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.github-profile-details .bio {
+    font-style: italic;
+
+}
+
+.github-profile-details .Url a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+.github-profile-details .Url a:hover {
+    text-decoration: underline;
+}
+
+
+/* .group class for search button and input styling */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 400px; /* Restrict the maximum width of the container */
+    width: 100%; /* Make sure it takes up available width */
+}
+
+/* .search-input styling */
+.search-input {
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    width: 100%; /* Adjust width to use available space */
+    padding-left: 2.5rem;
+    outline: none;
+    background: linear-gradient(180deg, rgb(56, 56, 56) 0%, rgb(36, 36, 36) 66%, rgb(41, 41, 41) 100%);
+    color: #fff;
+    transition: .3s ease;
+    border: 2px solid;
+    border-image: conic-gradient(#00F260, #0575E6, #64f38c) 1;
+}
+
+/* Placeholder styling */
+.search-input::placeholder {
+    color: #999;
+}
+
+.search-input:focus::placeholder {
+    color: #999;
+}
+
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #999; /* Change to desired color */
+    width: 1.5rem; /* Increase size if needed */
+    height: 1.5rem; /* Increase size if needed */
+}
+  
+  
